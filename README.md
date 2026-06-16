@@ -1,14 +1,14 @@
-# rust_peas
+# rust_enum_peas
 
-`rust_peas` is a next-generation, high-performance, concurrent Linux local security auditing, compliance verification, and privilege escalation risk-assessment engine written entirely in native Rust.
+`rust_enum_peas` is a next-generation, high-performance, concurrent Linux local security auditing, compliance verification, and privilege escalation risk-assessment engine written entirely in native Rust.
 
-Designed as a modern, blindingly fast successor to legacy shell-based enumeration scripts, `rust_peas` leverages massive parallel thread pools and direct kernel/VFS interaction to deliver comprehensive host auditing without the operational overhead or detection signatures of spawning thousands of subshells.
+Designed as a modern, blindingly fast successor to legacy shell-based enumeration scripts, `rust_enum_peas` leverages massive parallel thread pools and direct kernel/VFS interaction to deliver comprehensive host auditing without the operational overhead or detection signatures of spawning thousands of subshells.
 
 ---
 
 ## Key Architectural Advantages
 
-| Capability            | Legacy Shell Scripts (e.g., LinPEAS)                | `rust_peas` (Rust Engine)                                      |
+| Capability            | Legacy Shell Scripts (e.g., LinPEAS)                | `rust_enum_peas` (Rust Engine)                                      |
 | --------------------- | --------------------------------------------------- | -------------------------------------------------------------- |
 | **Execution Speed**   | Slow (Spawns thousands of heavy bash subshells)     | **Instantaneous** (Parallel processing via Rayon)              |
 | **System Visibility** | High (Generates massive host process-logging noise) | **Minimal** (Direct VFS & system call interaction only)        |
@@ -52,14 +52,14 @@ cargo build --release --target x86_64-unknown-linux-musl
 The resulting optimized asset can be found at:
 
 ```text
-target/x86_64-unknown-linux-musl/release/rust_peas
+target/x86_64-unknown-linux-musl/release/rust_enum_peas
 ```
 
 ---
 
 ## Master Engineering Roadmap
 
-To establish `rust_peas` as a definitive open-source platform for Linux host auditing, the roadmap focuses on expanding deeper into the host operating system layers:
+To establish `rust_enum_peas` as a definitive open-source platform for Linux host auditing, the roadmap focuses on expanding deeper into the host operating system layers:
 
 ### Phase 1: Advanced In-Memory & Process Sniffing (Immediate Next Steps)
 
